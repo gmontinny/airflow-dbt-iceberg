@@ -1,0 +1,41 @@
+[2025-05-04T18:45:25.488+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-04T18:45:25.501+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_iceberg_example.create_iceberg_tables manual__2025-05-04T18:45:23.340899+00:00 [queued]>
+[2025-05-04T18:45:25.505+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_iceberg_example.create_iceberg_tables manual__2025-05-04T18:45:23.340899+00:00 [queued]>
+[2025-05-04T18:45:25.506+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-05-04T18:45:25.513+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): create_iceberg_tables> on 2025-05-04 18:45:23.340899+00:00
+[2025-05-04T18:45:25.518+0000] {standard_task_runner.py:63} INFO - Started process 695 to run task
+[2025-05-04T18:45:25.520+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_iceberg_example', 'create_iceberg_tables', 'manual__2025-05-04T18:45:23.340899+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/dbt_iceberg_dag.py', '--cfg-path', '/tmp/tmp2oprge40']
+[2025-05-04T18:45:25.520+0000] {standard_task_runner.py:91} INFO - Job 65: Subtask create_iceberg_tables
+[2025-05-04T18:45:25.548+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_iceberg_example.create_iceberg_tables manual__2025-05-04T18:45:23.340899+00:00 [running]> on host 27fc0593f179
+[2025-05-04T18:45:25.592+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_iceberg_example' AIRFLOW_CTX_TASK_ID='create_iceberg_tables' AIRFLOW_CTX_EXECUTION_DATE='2025-05-04T18:45:23.340899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-04T18:45:23.340899+00:00'
+[2025-05-04T18:45:25.592+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-04T18:45:25.637+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-04T18:45:25.638+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_iceberg_dag.py", line 107, in create_iceberg_tables
+    cursor.execute("""
+  File "/home/airflow/.local/lib/python3.10/site-packages/trino/dbapi.py", line 592, in execute
+    self._iterator = iter(self._query.execute())
+  File "/home/airflow/.local/lib/python3.10/site-packages/trino/client.py", line 810, in execute
+    self._result.rows += self.fetch()
+  File "/home/airflow/.local/lib/python3.10/site-packages/trino/client.py", line 830, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.10/site-packages/trino/client.py", line 609, in process
+    raise self._process_error(response["error"], response.get("id"))
+  File "/home/airflow/.local/lib/python3.10/site-packages/trino/client.py", line 578, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEBERG_FILESYSTEM_ERROR, message="Cannot create a table on a non-empty location: s3a://iceberg-data/raw/products, set 'iceberg.unique-table-location=true' in your Iceberg catalog properties to use unique table locations for every table.", query_id=20250504_184344_00007_scynm)
+[2025-05-04T18:45:25.646+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_iceberg_example, task_id=create_iceberg_tables, run_id=manual__2025-05-04T18:45:23.340899+00:00, execution_date=20250504T184523, start_date=20250504T184525, end_date=20250504T184525
+[2025-05-04T18:45:25.652+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 65 for task create_iceberg_tables (TrinoExternalError(type=EXTERNAL, name=ICEBERG_FILESYSTEM_ERROR, message="Cannot create a table on a non-empty location: s3a://iceberg-data/raw/products, set 'iceberg.unique-table-location=true' in your Iceberg catalog properties to use unique table locations for every table.", query_id=20250504_184344_00007_scynm); 695)
+[2025-05-04T18:45:25.691+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-05-04T18:45:25.692+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

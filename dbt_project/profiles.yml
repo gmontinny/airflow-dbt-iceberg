@@ -1,0 +1,13 @@
+iceberg_example:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none  # Sem autenticação para este exemplo
+      user: airflow
+      host: trino
+      port: 8080
+      catalog: iceberg
+      schema: default
+      threads: 4
+      retries: 3

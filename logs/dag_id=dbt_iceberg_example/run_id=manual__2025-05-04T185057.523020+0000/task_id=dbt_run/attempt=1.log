@@ -1,0 +1,40 @@
+[2025-05-04T18:51:05.345+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-04T18:51:05.359+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_run manual__2025-05-04T18:50:57.523020+00:00 [queued]>
+[2025-05-04T18:51:05.364+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_run manual__2025-05-04T18:50:57.523020+00:00 [queued]>
+[2025-05-04T18:51:05.365+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-05-04T18:51:05.373+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2025-05-04 18:50:57.523020+00:00
+[2025-05-04T18:51:05.379+0000] {standard_task_runner.py:63} INFO - Started process 785 to run task
+[2025-05-04T18:51:05.381+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_iceberg_example', 'dbt_run', 'manual__2025-05-04T18:50:57.523020+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/dbt_iceberg_dag.py', '--cfg-path', '/tmp/tmp063ew_ss']
+[2025-05-04T18:51:05.382+0000] {standard_task_runner.py:91} INFO - Job 70: Subtask dbt_run
+[2025-05-04T18:51:05.413+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_iceberg_example.dbt_run manual__2025-05-04T18:50:57.523020+00:00 [running]> on host 27fc0593f179
+[2025-05-04T18:51:05.462+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_iceberg_example' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-05-04T18:50:57.523020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-04T18:50:57.523020+00:00'
+[2025-05-04T18:51:05.463+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-04T18:51:05.470+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-04T18:51:05.471+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt_project && dbt run --profiles-dir .']
+[2025-05-04T18:51:05.480+0000] {subprocess.py:86} INFO - Output:
+[2025-05-04T18:51:07.693+0000] {subprocess.py:93} INFO - [0m18:51:07  Running with dbt=1.7.0
+[2025-05-04T18:51:07.979+0000] {subprocess.py:93} INFO - [0m18:51:07  Registered adapter: trino=1.7.0
+[2025-05-04T18:51:07.991+0000] {subprocess.py:93} INFO - [0m18:51:07  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[2025-05-04T18:51:09.172+0000] {subprocess.py:93} INFO - [0m18:51:09  Found 4 models, 31 tests, 0 sources, 0 exposures, 0 metrics, 420 macros, 0 groups, 0 semantic models
+[2025-05-04T18:51:09.175+0000] {subprocess.py:93} INFO - [0m18:51:09
+[2025-05-04T18:51:19.920+0000] {subprocess.py:93} INFO - [0m18:51:19  Concurrency: 4 threads (target='dev')
+[2025-05-04T18:51:19.921+0000] {subprocess.py:93} INFO - [0m18:51:19
+[2025-05-04T18:51:19.929+0000] {subprocess.py:93} INFO - [0m18:51:19  1 of 4 START sql view model default_staging.stg_products ....................... [RUN]
+[2025-05-04T18:51:19.930+0000] {subprocess.py:93} INFO - [0m18:51:19  2 of 4 START sql view model default_staging.stg_sales .......................... [RUN]
+[2025-05-04T18:51:20.197+0000] {subprocess.py:93} INFO - [0m18:51:20  1 of 4 OK created sql view model default_staging.stg_products .................. [[32mSUCCESS[0m in 0.26s]
+[2025-05-04T18:51:20.198+0000] {subprocess.py:93} INFO - [0m18:51:20  2 of 4 OK created sql view model default_staging.stg_sales ..................... [[32mSUCCESS[0m in 0.26s]
+[2025-05-04T18:51:20.203+0000] {subprocess.py:93} INFO - [0m18:51:20  3 of 4 START sql table model default_marts.sales_by_category ................... [RUN]
+[2025-05-04T18:51:20.204+0000] {subprocess.py:93} INFO - [0m18:51:20  4 of 4 START sql table model default_marts.sales_by_product .................... [RUN]
+[2025-05-04T18:51:21.664+0000] {subprocess.py:93} INFO - [0m18:51:21  3 of 4 OK created sql table model default_marts.sales_by_category .............. [[32mSUCCESS[0m in 1.46s]
+[2025-05-04T18:51:21.665+0000] {subprocess.py:93} INFO - [0m18:51:21  4 of 4 OK created sql table model default_marts.sales_by_product ............... [[32mSUCCESS[0m in 1.46s]
+[2025-05-04T18:51:21.678+0000] {subprocess.py:93} INFO - [0m18:51:21
+[2025-05-04T18:51:21.678+0000] {subprocess.py:93} INFO - [0m18:51:21  Finished running 2 view models, 2 table models in 0 hours 0 minutes and 12.50 seconds (12.50s).
+[2025-05-04T18:51:21.738+0000] {subprocess.py:93} INFO - [0m18:51:21
+[2025-05-04T18:51:21.739+0000] {subprocess.py:93} INFO - [0m18:51:21  [32mCompleted successfully[0m
+[2025-05-04T18:51:21.740+0000] {subprocess.py:93} INFO - [0m18:51:21
+[2025-05-04T18:51:21.741+0000] {subprocess.py:93} INFO - [0m18:51:21  Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[2025-05-04T18:51:22.514+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-04T18:51:22.514+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-04T18:51:22.528+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_iceberg_example, task_id=dbt_run, run_id=manual__2025-05-04T18:50:57.523020+00:00, execution_date=20250504T185057, start_date=20250504T185105, end_date=20250504T185122
+[2025-05-04T18:52:36.603+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-04T18:52:36.603+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

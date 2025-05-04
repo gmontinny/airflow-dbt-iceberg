@@ -1,0 +1,27 @@
+[2025-05-04T18:51:22.996+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-04T18:51:23.008+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_docs_generate manual__2025-05-04T18:50:57.523020+00:00 [queued]>
+[2025-05-04T18:51:23.012+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_docs_generate manual__2025-05-04T18:50:57.523020+00:00 [queued]>
+[2025-05-04T18:51:23.013+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-05-04T18:51:23.020+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_docs_generate> on 2025-05-04 18:50:57.523020+00:00
+[2025-05-04T18:51:23.024+0000] {standard_task_runner.py:63} INFO - Started process 824 to run task
+[2025-05-04T18:51:23.026+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_iceberg_example', 'dbt_docs_generate', 'manual__2025-05-04T18:50:57.523020+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/dbt_iceberg_dag.py', '--cfg-path', '/tmp/tmp08fzkkjm']
+[2025-05-04T18:51:23.026+0000] {standard_task_runner.py:91} INFO - Job 71: Subtask dbt_docs_generate
+[2025-05-04T18:51:23.052+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_iceberg_example.dbt_docs_generate manual__2025-05-04T18:50:57.523020+00:00 [running]> on host 27fc0593f179
+[2025-05-04T18:51:23.094+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_iceberg_example' AIRFLOW_CTX_TASK_ID='dbt_docs_generate' AIRFLOW_CTX_EXECUTION_DATE='2025-05-04T18:50:57.523020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-04T18:50:57.523020+00:00'
+[2025-05-04T18:51:23.095+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-04T18:51:23.103+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-04T18:51:23.103+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt_project && dbt docs generate --profiles-dir .']
+[2025-05-04T18:51:23.111+0000] {subprocess.py:86} INFO - Output:
+[2025-05-04T18:51:25.086+0000] {subprocess.py:93} INFO - [0m18:51:25  Running with dbt=1.7.0
+[2025-05-04T18:51:25.334+0000] {subprocess.py:93} INFO - [0m18:51:25  Registered adapter: trino=1.7.0
+[2025-05-04T18:51:25.496+0000] {subprocess.py:93} INFO - [0m18:51:25  Found 4 models, 31 tests, 0 sources, 0 exposures, 0 metrics, 420 macros, 0 groups, 0 semantic models
+[2025-05-04T18:51:25.499+0000] {subprocess.py:93} INFO - [0m18:51:25
+[2025-05-04T18:51:25.662+0000] {subprocess.py:93} INFO - [0m18:51:25  Concurrency: 4 threads (target='dev')
+[2025-05-04T18:51:25.663+0000] {subprocess.py:93} INFO - [0m18:51:25
+[2025-05-04T18:51:26.135+0000] {subprocess.py:93} INFO - [0m18:51:26  Building catalog
+[2025-05-04T18:51:26.622+0000] {subprocess.py:93} INFO - [0m18:51:26  Catalog written to /opt/***/dbt_project/target/catalog.json
+[2025-05-04T18:51:27.360+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-04T18:51:27.360+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-04T18:51:27.375+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_iceberg_example, task_id=dbt_docs_generate, run_id=manual__2025-05-04T18:50:57.523020+00:00, execution_date=20250504T185057, start_date=20250504T185123, end_date=20250504T185127
+[2025-05-04T18:51:27.405+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-04T18:51:27.405+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
