@@ -1,0 +1,1 @@
+[2025-05-04T19:30:05.207+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: dbt_iceberg_example.dbt_docs_generate manual__2025-05-04T19:29:44.377206+00:00 [queued]> finished (success) although the task says it's queued. (Info: None) Was the task killed externally?

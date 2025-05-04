@@ -111,8 +111,94 @@ O projeto inclui os seguintes componentes:
 3. O DAG irá:
    - Inicializar o MinIO com dados de exemplo
    - Criar tabelas Iceberg no Trino
+   - Inserir dados nas tabelas Iceberg
    - Executar modelos DBT para transformar os dados
    - Gerar documentação DBT
+
+### Detalhes do DAG (dbt_iceberg_dag.py)
+
+O arquivo `dbt_iceberg_dag.py` define um DAG do Airflow que orquestra todo o processo de ETL. Ele contém dados de exemplo e as seguintes funções principais:
+
+#### Dados de Exemplo no DAG
+
+O DAG inclui estruturas de dados Python que definem os dados de exemplo:
+
+```python
+# Dados de produtos
+sample_data = [
+    {"id": 1, "name": "Product A", "category": "Electronics", "price": 199.99, "date": "2023-01-15"},
+    {"id": 2, "name": "Product B", "category": "Clothing", "price": 49.99, "date": "2023-01-16"},
+    {"id": 3, "name": "Product C", "category": "Electronics", "price": 299.99, "date": "2023-01-17"},
+    {"id": 4, "name": "Product D", "category": "Home", "price": 129.99, "date": "2023-01-18"},
+    {"id": 5, "name": "Product E", "category": "Clothing", "price": 79.99, "date": "2023-01-19"},
+]
+
+# Dados de vendas
+sample_sales = [
+    {"sale_id": 101, "product_id": 1, "quantity": 2, "total": 399.98, "date": "2023-01-20"},
+    {"sale_id": 102, "product_id": 2, "quantity": 1, "total": 49.99, "date": "2023-01-20"},
+    # ... mais registros de vendas
+]
+```
+
+#### Funções Principais
+
+1. **initialize_minio()**: 
+   - Cria um bucket chamado 'iceberg-data' no MinIO se não existir
+   - Faz upload de dados de exemplo de produtos e vendas em formato JSON
+
+2. **create_iceberg_tables()**:
+   - Cria o schema 'raw' no catálogo Iceberg se não existir
+   - Cria tabelas Iceberg para produtos e vendas com formato Parquet
+   - Define a localização das tabelas no MinIO
+
+   Estrutura da tabela de produtos:
+   ```sql
+   CREATE TABLE IF NOT EXISTS iceberg.raw.products (
+       id INTEGER,
+       name VARCHAR,
+       category VARCHAR,
+       price DOUBLE,
+       date DATE
+   )
+   ```
+
+   Estrutura da tabela de vendas:
+   ```sql
+   CREATE TABLE IF NOT EXISTS iceberg.raw.sales (
+       sale_id INTEGER,
+       product_id INTEGER,
+       quantity INTEGER,
+       total DOUBLE,
+       date DATE
+   )
+   ```
+
+3. **insert_data_into_trino()**:
+   - Limpa dados existentes nas tabelas para evitar duplicações
+   - Insere dados de exemplo de produtos e vendas nas tabelas Iceberg
+
+   Operações de inserção:
+   ```sql
+   -- Limpar dados existentes
+   DELETE FROM iceberg.raw.products
+   DELETE FROM iceberg.raw.sales
+
+   -- Inserir dados de produtos
+   INSERT INTO iceberg.raw.products (id, name, category, price, date)
+   VALUES (?, ?, ?, ?, ?)
+
+   -- Inserir dados de vendas
+   INSERT INTO iceberg.raw.sales (sale_id, product_id, quantity, total, date)
+   VALUES (?, ?, ?, ?, ?)
+   ```
+
+O fluxo de execução do DAG segue a seguinte ordem:
+```
+initialize_minio → create_iceberg_tables → insert_data_into_trino → dbt_debug → dbt_run → dbt_docs_generate
+```
+
+Cada tarefa depende da conclusão bem-sucedida da tarefa anterior, garantindo um fluxo de trabalho ordenado e confiável.
 
 ## Dados de Exemplo e Transformações
 
@@ -120,7 +206,11 @@ Este projeto inclui dados de exemplo que demonstram um fluxo de trabalho típico
 
 1. **Dados Brutos**:
    - **Produtos**: Informações sobre produtos, incluindo ID, nome, categoria, preço e data
+     - Exemplo: Produtos em categorias como "Electronics", "Clothing" e "Home"
+     - Armazenados inicialmente como JSON no MinIO e depois carregados em tabelas Iceberg
    - **Vendas**: Registros de vendas com ID da venda, ID do produto, quantidade, valor total e data
+     - Exemplo: Transações de vendas com diferentes quantidades e valores totais
+     - Relacionados aos produtos através do campo product_id
 
 2. **Transformações**:
    - **Modelos de Staging**: Limpam e padronizam os dados brutos

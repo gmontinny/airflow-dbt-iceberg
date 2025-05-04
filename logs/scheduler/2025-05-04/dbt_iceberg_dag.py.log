@@ -966,3 +966,353 @@ trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEB
 [2025-05-04T19:11:48.511+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:11:48.511+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-05-04T19:11:48.525+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:11:48.525+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
 [2025-05-04T19:11:48.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:12:19.157+0000] {processor.py:161} INFO - Started process (PID=989) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:19.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:12:19.158+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:19.158+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:19.218+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:19.236+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:19.236+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:12:19.249+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:19.249+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:12:19.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.110 seconds
+[2025-05-04T19:12:50.336+0000] {processor.py:161} INFO - Started process (PID=996) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:50.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:12:50.339+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:50.338+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:50.401+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:12:50.418+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:50.418+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:12:50.430+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:12:50.430+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:12:50.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:13:21.414+0000] {processor.py:161} INFO - Started process (PID=1003) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:21.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:13:21.417+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:21.417+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:21.489+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:21.507+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:21.507+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:13:21.522+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:21.522+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:13:21.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.125 seconds
+[2025-05-04T19:13:52.233+0000] {processor.py:161} INFO - Started process (PID=1010) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:52.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:13:52.235+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:52.235+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:52.298+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:13:52.317+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:52.317+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:13:52.330+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:13:52.330+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:13:52.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.121 seconds
+[2025-05-04T19:14:22.979+0000] {processor.py:161} INFO - Started process (PID=1017) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:22.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:14:22.981+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:22.981+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:23.042+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:23.063+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:23.063+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:14:23.076+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:23.075+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:14:23.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:14:53.149+0000] {processor.py:161} INFO - Started process (PID=1024) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:53.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:14:53.150+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:53.150+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:53.208+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:14:53.224+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:53.223+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:14:53.236+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:14:53.236+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:14:53.248+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.103 seconds
+[2025-05-04T19:15:26.086+0000] {processor.py:161} INFO - Started process (PID=1031) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:26.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:15:26.087+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:26.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:26.150+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:26.175+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:26.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:15:26.189+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:26.189+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:15:26.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.122 seconds
+[2025-05-04T19:15:58.938+0000] {processor.py:161} INFO - Started process (PID=1038) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:58.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:15:58.939+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:58.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:59.001+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:15:59.060+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:59.060+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:15:59.070+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:15:59.070+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:15:59.082+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.151 seconds
+[2025-05-04T19:16:31.873+0000] {processor.py:161} INFO - Started process (PID=1045) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:16:31.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:16:31.875+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:16:31.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:16:31.935+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:16:31.951+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:16:31.951+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:16:31.963+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:16:31.963+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:16:31.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.105 seconds
+[2025-05-04T19:17:03.040+0000] {processor.py:161} INFO - Started process (PID=1052) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:03.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:17:03.042+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:03.041+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:03.101+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:03.117+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:03.117+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:17:03.129+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:03.129+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:17:03.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.105 seconds
+[2025-05-04T19:17:34.068+0000] {processor.py:161} INFO - Started process (PID=1059) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:34.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:17:34.070+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:34.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:34.137+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:17:34.157+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:34.156+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:17:34.172+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:17:34.172+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:17:34.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.120 seconds
+[2025-05-04T19:18:04.875+0000] {processor.py:161} INFO - Started process (PID=1066) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:04.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:18:04.877+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:04.876+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:04.940+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:05.006+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:05.006+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:18:05.018+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:05.018+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:18:05.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.160 seconds
+[2025-05-04T19:18:35.565+0000] {processor.py:161} INFO - Started process (PID=1073) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:35.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:18:35.567+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:35.566+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:35.631+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:18:35.649+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:35.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:18:35.663+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:18:35.662+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:18:35.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.113 seconds
+[2025-05-04T19:19:05.782+0000] {processor.py:161} INFO - Started process (PID=1080) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:05.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:19:05.784+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:05.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:05.845+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:05.867+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:05.866+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:19:05.880+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:05.880+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:19:05.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.115 seconds
+[2025-05-04T19:19:36.780+0000] {processor.py:161} INFO - Started process (PID=1087) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:36.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:19:36.782+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:36.782+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:36.846+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:19:36.865+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:36.865+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:19:36.880+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:19:36.880+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:19:36.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.119 seconds
+[2025-05-04T19:20:07.628+0000] {processor.py:161} INFO - Started process (PID=1094) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:07.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:20:07.630+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:07.630+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:07.685+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:07.701+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:07.701+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:20:07.712+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:07.712+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:20:07.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.100 seconds
+[2025-05-04T19:20:39.499+0000] {processor.py:161} INFO - Started process (PID=1101) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:39.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:20:39.501+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:39.501+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:39.558+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:20:39.574+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:39.574+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:20:39.585+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:20:39.585+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:20:39.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.104 seconds
+[2025-05-04T19:21:12.387+0000] {processor.py:161} INFO - Started process (PID=1108) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:12.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:21:12.389+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:12.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:12.456+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:12.476+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:12.476+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:21:12.489+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:12.489+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:21:12.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.122 seconds
+[2025-05-04T19:21:43.360+0000] {processor.py:161} INFO - Started process (PID=1115) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:43.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:21:43.366+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:43.366+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:43.434+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:21:43.451+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:43.450+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:21:43.464+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:21:43.464+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:21:43.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.122 seconds
+[2025-05-04T19:22:14.203+0000] {processor.py:161} INFO - Started process (PID=1122) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:14.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:22:14.204+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:14.204+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:14.273+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:14.294+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:14.294+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:22:14.309+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:14.309+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:22:14.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.126 seconds
+[2025-05-04T19:22:45.529+0000] {processor.py:161} INFO - Started process (PID=1129) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:45.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:22:45.531+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:45.531+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:45.604+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:22:45.684+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:45.683+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:22:45.698+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:22:45.698+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:22:45.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.193 seconds
+[2025-05-04T19:23:15.839+0000] {processor.py:161} INFO - Started process (PID=1136) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:15.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:23:15.841+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:15.841+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:15.903+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:15.920+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:15.920+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:23:15.933+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:15.932+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:23:15.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:23:46.784+0000] {processor.py:161} INFO - Started process (PID=1143) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:46.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:23:46.786+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:46.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:46.849+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:23:46.868+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:46.867+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:23:46.882+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:23:46.882+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:23:46.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.114 seconds
+[2025-05-04T19:24:17.680+0000] {processor.py:161} INFO - Started process (PID=1150) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:17.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:24:17.682+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:17.682+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:17.746+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:17.764+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:17.764+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:24:17.776+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:17.775+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:24:17.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.114 seconds
+[2025-05-04T19:24:50.523+0000] {processor.py:161} INFO - Started process (PID=1157) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:50.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:24:50.525+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:50.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:50.591+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:24:50.652+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:50.651+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:24:50.662+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:24:50.662+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:24:50.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.156 seconds
+[2025-05-04T19:25:23.462+0000] {processor.py:161} INFO - Started process (PID=1164) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:23.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:25:23.464+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:23.464+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:23.520+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:23.536+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:23.536+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:25:23.547+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:23.547+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:25:23.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.100 seconds
+[2025-05-04T19:25:55.389+0000] {processor.py:161} INFO - Started process (PID=1171) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:55.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:25:55.391+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:55.391+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:55.455+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:25:55.473+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:55.473+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:25:55.487+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:25:55.487+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:25:55.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.114 seconds
+[2025-05-04T19:26:26.123+0000] {processor.py:161} INFO - Started process (PID=1178) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:26.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:26:26.124+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:26.124+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:26.185+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:26.203+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:26.203+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:26:26.216+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:26.216+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:26:26.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.110 seconds
+[2025-05-04T19:26:57.510+0000] {processor.py:161} INFO - Started process (PID=1185) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:57.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:26:57.512+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:57.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:57.579+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:26:57.597+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:57.596+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:26:57.610+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:26:57.610+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:26:57.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.115 seconds
+[2025-05-04T19:27:28.618+0000] {processor.py:161} INFO - Started process (PID=1192) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:28.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:27:28.620+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:28.620+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:28.682+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:28.699+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:28.699+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:27:28.712+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:28.712+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:27:28.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:27:59.633+0000] {processor.py:161} INFO - Started process (PID=1199) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:59.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:27:59.636+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:59.636+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:59.713+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:27:59.732+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:59.731+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:27:59.746+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:27:59.746+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:27:59.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.132 seconds
+[2025-05-04T19:28:30.371+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:28:30.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:28:30.373+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:28:30.373+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:28:30.436+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:28:30.454+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:28:30.454+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:28:30.467+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:28:30.467+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:28:30.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:29:00.785+0000] {processor.py:161} INFO - Started process (PID=1213) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:00.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:29:00.786+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:00.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:00.854+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:00.876+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:00.876+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:29:00.892+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:00.892+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:29:00.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.125 seconds
+[2025-05-04T19:29:31.885+0000] {processor.py:161} INFO - Started process (PID=1220) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:31.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:29:31.887+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:31.887+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:31.944+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:29:32.003+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:32.002+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:29:32.013+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:29:32.013+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:29:32.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.143 seconds
+[2025-05-04T19:30:04.824+0000] {processor.py:161} INFO - Started process (PID=1227) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:04.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:30:04.826+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:04.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:04.880+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:04.895+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:04.895+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:30:04.907+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:04.907+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:30:04.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.097 seconds
+[2025-05-04T19:30:37.687+0000] {processor.py:161} INFO - Started process (PID=1234) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:37.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:30:37.689+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:37.689+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:37.753+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:30:37.772+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:37.772+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:30:37.786+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:30:37.786+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:30:37.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.114 seconds
+[2025-05-04T19:31:09.007+0000] {processor.py:161} INFO - Started process (PID=1241) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:09.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:31:09.009+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:09.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:09.070+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:09.086+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:09.086+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:31:09.098+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:09.098+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:31:09.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.108 seconds
+[2025-05-04T19:31:40.126+0000] {processor.py:161} INFO - Started process (PID=1248) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:40.126+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:31:40.128+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:40.127+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:40.188+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:31:40.205+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:40.204+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:31:40.216+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:31:40.216+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:31:40.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.106 seconds
+[2025-05-04T19:32:11.067+0000] {processor.py:161} INFO - Started process (PID=1255) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:11.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:32:11.068+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:11.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:11.128+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:11.145+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:11.144+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:32:11.158+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:11.158+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:32:11.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.107 seconds
+[2025-05-04T19:32:41.822+0000] {processor.py:161} INFO - Started process (PID=1262) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:41.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:32:41.823+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:41.823+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:41.888+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:32:41.906+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:41.906+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:32:41.920+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:32:41.920+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:32:41.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.115 seconds
+[2025-05-04T19:33:12.124+0000] {processor.py:161} INFO - Started process (PID=1269) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:12.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:33:12.126+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:12.126+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:12.188+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:12.205+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:12.205+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:33:12.219+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:12.219+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:33:12.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:33:43.244+0000] {processor.py:161} INFO - Started process (PID=1276) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:43.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:33:43.246+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:43.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:43.305+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:33:43.322+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:43.322+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:33:43.334+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:33:43.334+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:33:43.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.106 seconds
+[2025-05-04T19:34:14.214+0000] {processor.py:161} INFO - Started process (PID=1283) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:14.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:34:14.216+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:14.216+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:14.270+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:14.286+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:14.286+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:34:14.297+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:14.297+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:34:14.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.098 seconds
+[2025-05-04T19:34:47.057+0000] {processor.py:161} INFO - Started process (PID=1290) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:47.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:34:47.059+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:47.059+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:47.115+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:34:47.132+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:47.131+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:34:47.143+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:34:47.143+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:34:47.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.099 seconds
+[2025-05-04T19:35:18.973+0000] {processor.py:161} INFO - Started process (PID=1297) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:18.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:35:18.974+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:18.974+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:19.040+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:19.058+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:19.058+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:35:19.072+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:19.072+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:35:19.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.115 seconds
+[2025-05-04T19:35:50.030+0000] {processor.py:161} INFO - Started process (PID=1304) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:50.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:35:50.032+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:50.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:50.103+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:35:50.122+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:50.122+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:35:50.136+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:35:50.136+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:35:50.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.126 seconds
+[2025-05-04T19:36:21.001+0000] {processor.py:161} INFO - Started process (PID=1311) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:21.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:36:21.003+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:21.003+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:21.066+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:21.083+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:21.082+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:36:21.095+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:21.095+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:36:21.106+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.110 seconds
+[2025-05-04T19:36:51.698+0000] {processor.py:161} INFO - Started process (PID=1318) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:51.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:36:51.700+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:51.700+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:51.766+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:36:51.828+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:51.828+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:36:51.839+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:36:51.839+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:36:51.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.159 seconds
+[2025-05-04T19:37:23.020+0000] {processor.py:161} INFO - Started process (PID=1325) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:23.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:37:23.022+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:23.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:23.086+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:23.104+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:23.104+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:37:23.116+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:23.116+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:37:23.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.111 seconds
+[2025-05-04T19:37:54.122+0000] {processor.py:161} INFO - Started process (PID=1332) to work on /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:54.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_iceberg_dag.py for tasks to queue
+[2025-05-04T19:37:54.124+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:54.124+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:54.185+0000] {processor.py:840} INFO - DAG(s) 'dbt_iceberg_example' retrieved from /opt/airflow/dags/dbt_iceberg_dag.py
+[2025-05-04T19:37:54.203+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:54.202+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-04T19:37:54.215+0000] {logging_mixin.py:188} INFO - [2025-05-04T19:37:54.214+0000] {dag.py:3954} INFO - Setting next_dagrun for dbt_iceberg_example to 2025-05-04 00:00:00+00:00, run_after=2025-05-05 00:00:00+00:00
+[2025-05-04T19:37:54.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_iceberg_dag.py took 0.108 seconds

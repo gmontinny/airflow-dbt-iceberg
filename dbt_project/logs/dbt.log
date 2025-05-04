@@ -900,3 +900,892 @@ select
 [0m18:51:26.626094 [debug] [MainThread]: Connection 'iceberg.information_schema' was properly closed.
 [0m18:51:26.626940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d52e014b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d50b98e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d509781f0>]}
 [0m18:51:26.627859 [debug] [MainThread]: Flushing usage events
+[0m19:29:53.280160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05973f1b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05949cee90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05949cee30>]}
+
+
+============================== 19:29:53.285131 | cf8abc0c-1d01-49a9-adc8-7b8e000e8db9 ==============================
+[0m19:29:53.285131 [info ] [MainThread]: Running with dbt=1.7.0
+[0m19:29:53.286106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': '/opt/airflow/dbt_project/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:53.287400 [info ] [MainThread]: dbt version: 1.7.0
+[0m19:29:53.288217 [info ] [MainThread]: python version: 3.10.14
+[0m19:29:53.289057 [info ] [MainThread]: python path: /home/airflow/.local/bin/python
+[0m19:29:53.289790 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[0m19:29:53.392715 [info ] [MainThread]: Using profiles dir at .
+[0m19:29:53.393843 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m19:29:53.394740 [info ] [MainThread]: Using dbt_project.yml file at /opt/airflow/dbt_project/dbt_project.yml
+[0m19:29:53.395577 [info ] [MainThread]: adapter type: trino
+[0m19:29:53.396354 [info ] [MainThread]: adapter version: 1.7.0
+[0m19:29:53.469648 [info ] [MainThread]: Configuration:
+[0m19:29:53.470833 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:29:53.471760 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:29:53.472656 [info ] [MainThread]: Required dependencies:
+[0m19:29:53.473627 [debug] [MainThread]: Executing "git --help"
+[0m19:29:53.476083 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:29:53.476965 [debug] [MainThread]: STDERR: "b''"
+[0m19:29:53.477824 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:29:53.478667 [info ] [MainThread]: Connection:
+[0m19:29:53.479503 [info ] [MainThread]:   host: trino
+[0m19:29:53.480360 [info ] [MainThread]:   port: 8080
+[0m19:29:53.481161 [info ] [MainThread]:   user: airflow
+[0m19:29:53.481970 [info ] [MainThread]:   database: iceberg
+[0m19:29:53.482844 [info ] [MainThread]:   schema: default
+[0m19:29:53.483897 [info ] [MainThread]:   cert: None
+[0m19:29:53.484763 [info ] [MainThread]:   prepared_statements_enabled: True
+[0m19:29:53.485669 [info ] [MainThread]: Registered adapter: trino=1.7.0
+[0m19:29:53.486618 [debug] [MainThread]: Acquiring new trino connection 'debug'
+[0m19:29:53.491072 [debug] [MainThread]: Using trino connection "debug"
+[0m19:29:53.491969 [debug] [MainThread]: On debug: select 1 as id
+[0m19:29:53.492773 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:29:53.508294 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:53.509864 [debug] [MainThread]: On debug: Close
+[0m19:29:53.510804 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:29:53.511697 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:29:53.512974 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.2745027, "process_user_time": 2.207584, "process_kernel_time": 0.1515, "process_mem_max_rss": "168176", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:29:53.513858 [debug] [MainThread]: Command `dbt debug` succeeded at 19:29:53.513720 after 0.28 seconds
+[0m19:29:53.514634 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:29:53.515405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05973f1b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0594b18e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0594b1a980>]}
+[0m19:29:53.516212 [debug] [MainThread]: Flushing usage events
+[0m19:29:57.624044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebb50c4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8ae2fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8ae2f80>]}
+
+
+============================== 19:29:57.628996 | d40e9d2e-a8b0-45ff-acfb-fdaf292be66b ==============================
+[0m19:29:57.628996 [info ] [MainThread]: Running with dbt=1.7.0
+[0m19:29:57.629929 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt_project/logs', 'debug': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:57.800577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8c37520>]}
+[0m19:29:57.870057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8797550>]}
+[0m19:29:57.871093 [info ] [MainThread]: Registered adapter: trino=1.7.0
+[0m19:29:57.881122 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m19:29:57.937558 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:29:57.938676 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:29:57.939521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8904d00>]}
+[0m19:29:58.976459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb123c0d0>]}
+[0m19:29:58.997128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8904f10>]}
+[0m19:29:58.998065 [info ] [MainThread]: Found 4 models, 31 tests, 0 sources, 0 exposures, 0 metrics, 420 macros, 0 groups, 0 semantic models
+[0m19:29:58.998894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb80c3e50>]}
+[0m19:29:59.000993 [info ] [MainThread]: 
+[0m19:29:59.002200 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m19:29:59.003711 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m19:29:59.004603 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m19:29:59.019918 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m19:29:59.022937 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m19:29:59.023941 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m19:29:59.024768 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m19:29:59.025570 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:59.026339 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:59.050614 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.051768 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.053515 [debug] [ThreadPool]: On list_iceberg: Close
+[0m19:29:59.055192 [debug] [ThreadPool]: On list_iceberg: Close
+[0m19:29:59.058341 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_iceberg, now list_iceberg_default_marts)
+[0m19:29:59.059165 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_iceberg, now list_iceberg_default_staging)
+[0m19:29:59.067165 [debug] [ThreadPool]: Using trino connection "list_iceberg_default_marts"
+[0m19:29:59.071507 [debug] [ThreadPool]: Using trino connection "list_iceberg_default_staging"
+[0m19:29:59.072580 [debug] [ThreadPool]: On list_iceberg_default_marts: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg_default_marts"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'default_marts') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'default_marts'
+[0m19:29:59.073433 [debug] [ThreadPool]: On list_iceberg_default_staging: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg_default_staging"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'default_staging') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'default_staging'
+[0m19:29:59.074324 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:29:59.075091 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:29:59.134811 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.135583 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.137157 [debug] [ThreadPool]: On list_iceberg_default_staging: ROLLBACK
+[0m19:29:59.138803 [debug] [ThreadPool]: On list_iceberg_default_marts: ROLLBACK
+[0m19:29:59.139642 [debug] [ThreadPool]: On list_iceberg_default_staging: Close
+[0m19:29:59.140448 [debug] [ThreadPool]: On list_iceberg_default_marts: Close
+[0m19:29:59.143831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb1295f00>]}
+[0m19:29:59.144813 [debug] [MainThread]: On master: COMMIT
+[0m19:29:59.145903 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:29:59.146848 [info ] [MainThread]: 
+[0m19:29:59.153899 [debug] [Thread-1 (]: Began running node model.iceberg_example.stg_products
+[0m19:29:59.154413 [debug] [Thread-2 (]: Began running node model.iceberg_example.stg_sales
+[0m19:29:59.155304 [info ] [Thread-1 (]: 1 of 4 START sql view model default_staging.stg_products ....................... [RUN]
+[0m19:29:59.156237 [info ] [Thread-2 (]: 2 of 4 START sql view model default_staging.stg_sales .......................... [RUN]
+[0m19:29:59.157355 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_iceberg_default_marts, now model.iceberg_example.stg_products)
+[0m19:29:59.158896 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_iceberg_default_staging, now model.iceberg_example.stg_sales)
+[0m19:29:59.159890 [debug] [Thread-1 (]: Began compiling node model.iceberg_example.stg_products
+[0m19:29:59.160754 [debug] [Thread-2 (]: Began compiling node model.iceberg_example.stg_sales
+[0m19:29:59.163380 [debug] [Thread-1 (]: Writing injected SQL for node "model.iceberg_example.stg_products"
+[0m19:29:59.165710 [debug] [Thread-2 (]: Writing injected SQL for node "model.iceberg_example.stg_sales"
+[0m19:29:59.169957 [debug] [Thread-1 (]: Timing info for model.iceberg_example.stg_products (compile): 19:29:59.161512 => 19:29:59.169709
+[0m19:29:59.170519 [debug] [Thread-2 (]: Timing info for model.iceberg_example.stg_sales (compile): 19:29:59.164108 => 19:29:59.170291
+[0m19:29:59.171230 [debug] [Thread-1 (]: Began executing node model.iceberg_example.stg_products
+[0m19:29:59.172187 [debug] [Thread-2 (]: Began executing node model.iceberg_example.stg_sales
+[0m19:29:59.193089 [debug] [Thread-1 (]: Writing runtime sql for node "model.iceberg_example.stg_products"
+[0m19:29:59.196522 [debug] [Thread-2 (]: Writing runtime sql for node "model.iceberg_example.stg_sales"
+[0m19:29:59.201611 [debug] [Thread-1 (]: Using trino connection "model.iceberg_example.stg_products"
+[0m19:29:59.203046 [debug] [Thread-2 (]: Using trino connection "model.iceberg_example.stg_sales"
+[0m19:29:59.203814 [debug] [Thread-1 (]: On model.iceberg_example.stg_products: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.stg_products"} */
+
+  create or replace view
+    "iceberg"."default_staging"."stg_products"
+  security definer
+  as
+    with source as (
+    select * from iceberg.raw.products
+),
+
+renamed as (
+    select
+        id as product_id,
+        name as product_name,
+        category,
+        price,
+        date as created_date
+    from source
+)
+
+select * from renamed
+  
+[0m19:29:59.204754 [debug] [Thread-2 (]: On model.iceberg_example.stg_sales: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.stg_sales"} */
+
+  create or replace view
+    "iceberg"."default_staging"."stg_sales"
+  security definer
+  as
+    with source as (
+    select * from iceberg.raw.sales
+),
+
+renamed as (
+    select
+        sale_id,
+        product_id,
+        quantity,
+        total as total_amount,
+        date as sale_date
+    from source
+)
+
+select * from renamed
+  
+[0m19:29:59.205632 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:29:59.206435 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:29:59.237906 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.238953 [debug] [Thread-2 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.254987 [debug] [Thread-1 (]: Timing info for model.iceberg_example.stg_products (execute): 19:29:59.172945 => 19:29:59.254779
+[0m19:29:59.257567 [debug] [Thread-2 (]: Timing info for model.iceberg_example.stg_sales (execute): 19:29:59.193436 => 19:29:59.257355
+[0m19:29:59.258527 [debug] [Thread-1 (]: On model.iceberg_example.stg_products: ROLLBACK
+[0m19:29:59.259432 [debug] [Thread-2 (]: On model.iceberg_example.stg_sales: ROLLBACK
+[0m19:29:59.260222 [debug] [Thread-1 (]: On model.iceberg_example.stg_products: Close
+[0m19:29:59.261075 [debug] [Thread-2 (]: On model.iceberg_example.stg_sales: Close
+[0m19:29:59.262344 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb10ec3d0>]}
+[0m19:29:59.263453 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb10ec5e0>]}
+[0m19:29:59.264372 [info ] [Thread-1 (]: 1 of 4 OK created sql view model default_staging.stg_products .................. [[32mSUCCESS[0m in 0.11s]
+[0m19:29:59.265435 [info ] [Thread-2 (]: 2 of 4 OK created sql view model default_staging.stg_sales ..................... [[32mSUCCESS[0m in 0.11s]
+[0m19:29:59.266444 [debug] [Thread-1 (]: Finished running node model.iceberg_example.stg_products
+[0m19:29:59.267428 [debug] [Thread-2 (]: Finished running node model.iceberg_example.stg_sales
+[0m19:29:59.269402 [debug] [Thread-4 (]: Began running node model.iceberg_example.sales_by_category
+[0m19:29:59.269943 [debug] [Thread-3 (]: Began running node model.iceberg_example.sales_by_product
+[0m19:29:59.270728 [info ] [Thread-4 (]: 3 of 4 START sql table model default_marts.sales_by_category ................... [RUN]
+[0m19:29:59.271609 [info ] [Thread-3 (]: 4 of 4 START sql table model default_marts.sales_by_product .................... [RUN]
+[0m19:29:59.272814 [debug] [Thread-4 (]: Acquiring new trino connection 'model.iceberg_example.sales_by_category'
+[0m19:29:59.273944 [debug] [Thread-3 (]: Acquiring new trino connection 'model.iceberg_example.sales_by_product'
+[0m19:29:59.274776 [debug] [Thread-4 (]: Began compiling node model.iceberg_example.sales_by_category
+[0m19:29:59.275633 [debug] [Thread-3 (]: Began compiling node model.iceberg_example.sales_by_product
+[0m19:29:59.279482 [debug] [Thread-4 (]: Writing injected SQL for node "model.iceberg_example.sales_by_category"
+[0m19:29:59.282855 [debug] [Thread-3 (]: Writing injected SQL for node "model.iceberg_example.sales_by_product"
+[0m19:29:59.287457 [debug] [Thread-4 (]: Timing info for model.iceberg_example.sales_by_category (compile): 19:29:59.276302 => 19:29:59.287179
+[0m19:29:59.288118 [debug] [Thread-3 (]: Timing info for model.iceberg_example.sales_by_product (compile): 19:29:59.280184 => 19:29:59.287908
+[0m19:29:59.288703 [debug] [Thread-4 (]: Began executing node model.iceberg_example.sales_by_category
+[0m19:29:59.289541 [debug] [Thread-3 (]: Began executing node model.iceberg_example.sales_by_product
+[0m19:29:59.329271 [debug] [Thread-4 (]: Writing runtime sql for node "model.iceberg_example.sales_by_category"
+[0m19:29:59.329875 [debug] [Thread-3 (]: Writing runtime sql for node "model.iceberg_example.sales_by_product"
+[0m19:29:59.335512 [debug] [Thread-4 (]: Using trino connection "model.iceberg_example.sales_by_category"
+[0m19:29:59.337877 [debug] [Thread-3 (]: Using trino connection "model.iceberg_example.sales_by_product"
+[0m19:29:59.338598 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_category"} */
+
+  
+    
+
+    create table "iceberg"."default_marts"."sales_by_category__dbt_tmp"
+      
+      
+    as (
+      with products as (
+    select * from "iceberg"."default_staging"."stg_products"
+),
+
+sales as (
+    select * from "iceberg"."default_staging"."stg_sales"
+),
+
+sales_by_category as (
+    select
+        p.category,
+        count(distinct p.product_id) as number_of_products,
+        sum(s.quantity) as total_quantity_sold,
+        sum(s.total_amount) as total_revenue,
+        avg(s.total_amount / s.quantity) as average_unit_price,
+        min(s.sale_date) as first_sale_date,
+        max(s.sale_date) as last_sale_date
+    from products p
+    inner join sales s on p.product_id = s.product_id
+    group by 1
+)
+
+select * from sales_by_category
+    )
+[0m19:29:59.339482 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_product"} */
+
+  
+    
+
+    create table "iceberg"."default_marts"."sales_by_product__dbt_tmp"
+      
+      
+    as (
+      with products as (
+    select * from "iceberg"."default_staging"."stg_products"
+),
+
+sales as (
+    select * from "iceberg"."default_staging"."stg_sales"
+),
+
+sales_by_product as (
+    select
+        p.product_id,
+        p.product_name,
+        p.category,
+        p.price as unit_price,
+        sum(s.quantity) as total_quantity_sold,
+        sum(s.total_amount) as total_revenue,
+        min(s.sale_date) as first_sale_date,
+        max(s.sale_date) as last_sale_date,
+        count(distinct s.sale_id) as number_of_sales
+    from products p
+    inner join sales s on p.product_id = s.product_id
+    group by 1, 2, 3, 4
+)
+
+select * from sales_by_product
+    )
+[0m19:29:59.340301 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:29:59.341103 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:29:59.816133 [debug] [Thread-3 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.824141 [debug] [Thread-3 (]: Using trino connection "model.iceberg_example.sales_by_product"
+[0m19:29:59.824966 [debug] [Thread-4 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.825749 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_product"} */
+alter table "iceberg"."default_marts"."sales_by_product" rename to "iceberg"."default_marts"."sales_by_product__dbt_backup"
+[0m19:29:59.829325 [debug] [Thread-4 (]: Using trino connection "model.iceberg_example.sales_by_category"
+[0m19:29:59.831724 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_category"} */
+alter table "iceberg"."default_marts"."sales_by_category" rename to "iceberg"."default_marts"."sales_by_category__dbt_backup"
+[0m19:29:59.859046 [debug] [Thread-3 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.864659 [debug] [Thread-3 (]: Using trino connection "model.iceberg_example.sales_by_product"
+[0m19:29:59.865765 [debug] [Thread-4 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.866758 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_product"} */
+alter table "iceberg"."default_marts"."sales_by_product__dbt_tmp" rename to "iceberg"."default_marts"."sales_by_product"
+[0m19:29:59.871335 [debug] [Thread-4 (]: Using trino connection "model.iceberg_example.sales_by_category"
+[0m19:29:59.873916 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_category"} */
+alter table "iceberg"."default_marts"."sales_by_category__dbt_tmp" rename to "iceberg"."default_marts"."sales_by_category"
+[0m19:29:59.902262 [debug] [Thread-3 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.903359 [debug] [Thread-4 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:29:59.911344 [debug] [Thread-3 (]: Applying DROP to: "iceberg"."default_marts"."sales_by_product__dbt_backup"
+[0m19:29:59.916130 [debug] [Thread-4 (]: Applying DROP to: "iceberg"."default_marts"."sales_by_category__dbt_backup"
+[0m19:29:59.918687 [debug] [Thread-3 (]: Using trino connection "model.iceberg_example.sales_by_product"
+[0m19:29:59.920020 [debug] [Thread-4 (]: Using trino connection "model.iceberg_example.sales_by_category"
+[0m19:29:59.920862 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_product"} */
+
+    drop table if exists "iceberg"."default_marts"."sales_by_product__dbt_backup"
+[0m19:29:59.921736 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "node_id": "model.iceberg_example.sales_by_category"} */
+
+    drop table if exists "iceberg"."default_marts"."sales_by_category__dbt_backup"
+[0m19:30:00.145652 [debug] [Thread-4 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:30:00.147019 [debug] [Thread-3 (]: SQL status: SUCCESS in 0.0 seconds
+[0m19:30:00.149727 [debug] [Thread-4 (]: Timing info for model.iceberg_example.sales_by_category (execute): 19:29:59.290195 => 19:30:00.149518
+[0m19:30:00.152666 [debug] [Thread-3 (]: Timing info for model.iceberg_example.sales_by_product (execute): 19:29:59.312218 => 19:30:00.152466
+[0m19:30:00.153632 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: ROLLBACK
+[0m19:30:00.154502 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: ROLLBACK
+[0m19:30:00.155352 [debug] [Thread-4 (]: On model.iceberg_example.sales_by_category: Close
+[0m19:30:00.156187 [debug] [Thread-3 (]: On model.iceberg_example.sales_by_product: Close
+[0m19:30:00.157577 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e49740730>]}
+[0m19:30:00.158832 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd40e9d2e-a8b0-45ff-acfb-fdaf292be66b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e4973ab30>]}
+[0m19:30:00.159878 [info ] [Thread-4 (]: 3 of 4 OK created sql table model default_marts.sales_by_category .............. [[32mSUCCESS[0m in 0.89s]
+[0m19:30:00.160890 [info ] [Thread-3 (]: 4 of 4 OK created sql table model default_marts.sales_by_product ............... [[32mSUCCESS[0m in 0.89s]
+[0m19:30:00.161855 [debug] [Thread-4 (]: Finished running node model.iceberg_example.sales_by_category
+[0m19:30:00.162855 [debug] [Thread-3 (]: Finished running node model.iceberg_example.sales_by_product
+[0m19:30:00.165352 [debug] [MainThread]: On master: COMMIT
+[0m19:30:00.166369 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:30:00.167168 [debug] [MainThread]: Connection 'model.iceberg_example.stg_products' was properly closed.
+[0m19:30:00.167933 [debug] [MainThread]: Connection 'model.iceberg_example.stg_sales' was properly closed.
+[0m19:30:00.168690 [debug] [MainThread]: Connection 'model.iceberg_example.sales_by_category' was properly closed.
+[0m19:30:00.169438 [debug] [MainThread]: Connection 'model.iceberg_example.sales_by_product' was properly closed.
+[0m19:30:00.170228 [info ] [MainThread]: 
+[0m19:30:00.171111 [info ] [MainThread]: Finished running 2 view models, 2 table models in 0 hours 0 minutes and 1.17 seconds (1.17s).
+[0m19:30:00.172474 [debug] [MainThread]: Command end result
+[0m19:30:00.190251 [info ] [MainThread]: 
+[0m19:30:00.191244 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:30:00.192135 [info ] [MainThread]: 
+[0m19:30:00.193004 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m19:30:00.194206 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.6100497, "process_user_time": 3.735656, "process_kernel_time": 0.238215, "process_mem_max_rss": "168188", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:30:00.195110 [debug] [MainThread]: Command `dbt run` succeeded at 19:30:00.194973 after 2.61 seconds
+[0m19:30:00.195891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebb50c4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8f3f370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7eb8c37520>]}
+[0m19:30:00.196691 [debug] [MainThread]: Flushing usage events
+[0m19:32:08.032689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e36bcfd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e346fafb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e346faf50>]}
+
+
+============================== 19:32:08.038033 | 51009fcd-3fc7-4365-9c82-07cc0dca7789 ==============================
+[0m19:32:08.038033 [info ] [MainThread]: Running with dbt=1.7.0
+[0m19:32:08.039150 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs generate --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m19:32:08.213055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e34830af0>]}
+[0m19:32:08.287206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e343ae170>]}
+[0m19:32:08.288457 [info ] [MainThread]: Registered adapter: trino=1.7.0
+[0m19:32:08.299100 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m19:32:08.441392 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:32:08.442445 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:32:08.448731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e341d40d0>]}
+[0m19:32:08.456846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e342ac7f0>]}
+[0m19:32:08.457738 [info ] [MainThread]: Found 4 models, 31 tests, 0 sources, 0 exposures, 0 metrics, 420 macros, 0 groups, 0 semantic models
+[0m19:32:08.458616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e342ac7c0>]}
+[0m19:32:08.461419 [info ] [MainThread]: 
+[0m19:32:08.462561 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m19:32:08.464414 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_default_staging'
+[0m19:32:08.465450 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_default_marts'
+[0m19:32:08.481699 [debug] [ThreadPool]: Using trino connection "list_iceberg_default_staging"
+[0m19:32:08.486100 [debug] [ThreadPool]: Using trino connection "list_iceberg_default_marts"
+[0m19:32:08.487067 [debug] [ThreadPool]: On list_iceberg_default_staging: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg_default_staging"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'default_staging') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'default_staging'
+[0m19:32:08.487920 [debug] [ThreadPool]: On list_iceberg_default_marts: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "list_iceberg_default_marts"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'default_marts') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'default_marts'
+[0m19:32:08.488814 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:32:08.489663 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:32:08.551308 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:32:08.552108 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m19:32:08.553942 [debug] [ThreadPool]: On list_iceberg_default_staging: ROLLBACK
+[0m19:32:08.555834 [debug] [ThreadPool]: On list_iceberg_default_marts: ROLLBACK
+[0m19:32:08.556832 [debug] [ThreadPool]: On list_iceberg_default_staging: Close
+[0m19:32:08.557795 [debug] [ThreadPool]: On list_iceberg_default_marts: Close
+[0m19:32:08.561523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51009fcd-3fc7-4365-9c82-07cc0dca7789', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e342ac520>]}
+[0m19:32:08.562881 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:32:08.563876 [info ] [MainThread]: 
+[0m19:32:08.570309 [debug] [Thread-1 (]: Began running node model.iceberg_example.stg_products
+[0m19:32:08.570815 [debug] [Thread-2 (]: Began running node model.iceberg_example.stg_sales
+[0m19:32:08.571956 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_iceberg_default_marts, now model.iceberg_example.stg_products)
+[0m19:32:08.573271 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_iceberg_default_staging, now model.iceberg_example.stg_sales)
+[0m19:32:08.574227 [debug] [Thread-1 (]: Began compiling node model.iceberg_example.stg_products
+[0m19:32:08.575169 [debug] [Thread-2 (]: Began compiling node model.iceberg_example.stg_sales
+[0m19:32:08.577721 [debug] [Thread-1 (]: Writing injected SQL for node "model.iceberg_example.stg_products"
+[0m19:32:08.580396 [debug] [Thread-2 (]: Writing injected SQL for node "model.iceberg_example.stg_sales"
+[0m19:32:08.584935 [debug] [Thread-1 (]: Timing info for model.iceberg_example.stg_products (compile): 19:32:08.575915 => 19:32:08.584605
+[0m19:32:08.585901 [debug] [Thread-1 (]: Began executing node model.iceberg_example.stg_products
+[0m19:32:08.586490 [debug] [Thread-2 (]: Timing info for model.iceberg_example.stg_sales (compile): 19:32:08.578539 => 19:32:08.586237
+[0m19:32:08.587303 [debug] [Thread-1 (]: Timing info for model.iceberg_example.stg_products (execute): 19:32:08.587058 => 19:32:08.587074
+[0m19:32:08.588226 [debug] [Thread-2 (]: Began executing node model.iceberg_example.stg_sales
+[0m19:32:08.589780 [debug] [Thread-1 (]: Finished running node model.iceberg_example.stg_products
+[0m19:32:08.590862 [debug] [Thread-2 (]: Timing info for model.iceberg_example.stg_sales (execute): 19:32:08.590579 => 19:32:08.590592
+[0m19:32:08.592420 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_stg_products_category.6007d8b2d1
+[0m19:32:08.592926 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_stg_products_created_date.db1f142e72
+[0m19:32:08.593444 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_stg_products_price.2d147627d4
+[0m19:32:08.594359 [debug] [Thread-2 (]: Finished running node model.iceberg_example.stg_sales
+[0m19:32:08.595590 [debug] [Thread-4 (]: Acquiring new trino connection 'test.iceberg_example.not_null_stg_products_category.6007d8b2d1'
+[0m19:32:08.596830 [debug] [Thread-3 (]: Acquiring new trino connection 'test.iceberg_example.not_null_stg_products_created_date.db1f142e72'
+[0m19:32:08.597931 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.iceberg_example.stg_products, now test.iceberg_example.not_null_stg_products_price.2d147627d4)
+[0m19:32:08.598942 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_stg_products_product_id.6373b0acf3
+[0m19:32:08.600114 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_stg_products_category.6007d8b2d1
+[0m19:32:08.601058 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_stg_products_created_date.db1f142e72
+[0m19:32:08.601952 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_stg_products_price.2d147627d4
+[0m19:32:08.603049 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.iceberg_example.stg_sales, now test.iceberg_example.not_null_stg_products_product_id.6373b0acf3)
+[0m19:32:08.615323 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_products_category.6007d8b2d1"
+[0m19:32:08.619499 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_products_created_date.db1f142e72"
+[0m19:32:08.623883 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_products_price.2d147627d4"
+[0m19:32:08.625150 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_stg_products_product_id.6373b0acf3
+[0m19:32:08.631005 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_products_product_id.6373b0acf3"
+[0m19:32:08.635025 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_products_created_date.db1f142e72 (compile): 19:32:08.615809 => 19:32:08.634758
+[0m19:32:08.635946 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_stg_products_price.2d147627d4 (compile): 19:32:08.620387 => 19:32:08.635696
+[0m19:32:08.636685 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_stg_products_created_date.db1f142e72
+[0m19:32:08.637264 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_stg_products_product_id.6373b0acf3 (compile): 19:32:08.627295 => 19:32:08.637011
+[0m19:32:08.637747 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_stg_products_category.6007d8b2d1 (compile): 19:32:08.603823 => 19:32:08.637521
+[0m19:32:08.638491 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_stg_products_price.2d147627d4
+[0m19:32:08.639507 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_products_created_date.db1f142e72 (execute): 19:32:08.639279 => 19:32:08.639293
+[0m19:32:08.640360 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_stg_products_product_id.6373b0acf3
+[0m19:32:08.641226 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_stg_products_category.6007d8b2d1
+[0m19:32:08.642149 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_stg_products_price.2d147627d4 (execute): 19:32:08.641891 => 19:32:08.641902
+[0m19:32:08.643463 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_stg_products_created_date.db1f142e72
+[0m19:32:08.644360 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_stg_products_product_id.6373b0acf3 (execute): 19:32:08.644145 => 19:32:08.644155
+[0m19:32:08.645251 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_stg_products_category.6007d8b2d1 (execute): 19:32:08.645037 => 19:32:08.645046
+[0m19:32:08.646480 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_stg_products_price.2d147627d4
+[0m19:32:08.647356 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_stg_products_product_name.0b59e4b939
+[0m19:32:08.648641 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_stg_products_product_id.6373b0acf3
+[0m19:32:08.650138 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_stg_products_category.6007d8b2d1
+[0m19:32:08.651236 [debug] [Thread-1 (]: Began running node test.iceberg_example.unique_stg_products_product_id.7d950a1467
+[0m19:32:08.652520 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_products_created_date.db1f142e72, now test.iceberg_example.not_null_stg_products_product_name.0b59e4b939)
+[0m19:32:08.653507 [debug] [Thread-2 (]: Began running node model.iceberg_example.sales_by_category
+[0m19:32:08.654490 [debug] [Thread-4 (]: Began running node model.iceberg_example.sales_by_product
+[0m19:32:08.655664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_products_price.2d147627d4, now test.iceberg_example.unique_stg_products_product_id.7d950a1467)
+[0m19:32:08.656512 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_stg_products_product_name.0b59e4b939
+[0m19:32:08.657708 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_products_product_id.6373b0acf3, now model.iceberg_example.sales_by_category)
+[0m19:32:08.658795 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_products_category.6007d8b2d1, now model.iceberg_example.sales_by_product)
+[0m19:32:08.659677 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.unique_stg_products_product_id.7d950a1467
+[0m19:32:08.664326 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_products_product_name.0b59e4b939"
+[0m19:32:08.665294 [debug] [Thread-2 (]: Began compiling node model.iceberg_example.sales_by_category
+[0m19:32:08.666334 [debug] [Thread-4 (]: Began compiling node model.iceberg_example.sales_by_product
+[0m19:32:08.672453 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.unique_stg_products_product_id.7d950a1467"
+[0m19:32:08.675863 [debug] [Thread-2 (]: Writing injected SQL for node "model.iceberg_example.sales_by_category"
+[0m19:32:08.679962 [debug] [Thread-4 (]: Writing injected SQL for node "model.iceberg_example.sales_by_product"
+[0m19:32:08.681287 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_products_product_name.0b59e4b939 (compile): 19:32:08.660357 => 19:32:08.680928
+[0m19:32:08.683140 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_stg_products_product_name.0b59e4b939
+[0m19:32:08.684118 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_products_product_name.0b59e4b939 (execute): 19:32:08.683866 => 19:32:08.683878
+[0m19:32:08.685708 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_stg_products_product_name.0b59e4b939
+[0m19:32:08.686292 [debug] [Thread-1 (]: Timing info for test.iceberg_example.unique_stg_products_product_id.7d950a1467 (compile): 19:32:08.667034 => 19:32:08.686028
+[0m19:32:08.686884 [debug] [Thread-4 (]: Timing info for model.iceberg_example.sales_by_product (compile): 19:32:08.676549 => 19:32:08.686624
+[0m19:32:08.687615 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276
+[0m19:32:08.688249 [debug] [Thread-2 (]: Timing info for model.iceberg_example.sales_by_category (compile): 19:32:08.673487 => 19:32:08.688001
+[0m19:32:08.688938 [debug] [Thread-1 (]: Began executing node test.iceberg_example.unique_stg_products_product_id.7d950a1467
+[0m19:32:08.689848 [debug] [Thread-4 (]: Began executing node model.iceberg_example.sales_by_product
+[0m19:32:08.690953 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_products_product_name.0b59e4b939, now test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276)
+[0m19:32:08.691771 [debug] [Thread-2 (]: Began executing node model.iceberg_example.sales_by_category
+[0m19:32:08.692654 [debug] [Thread-1 (]: Timing info for test.iceberg_example.unique_stg_products_product_id.7d950a1467 (execute): 19:32:08.692430 => 19:32:08.692440
+[0m19:32:08.693510 [debug] [Thread-4 (]: Timing info for model.iceberg_example.sales_by_product (execute): 19:32:08.693290 => 19:32:08.693300
+[0m19:32:08.694307 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276
+[0m19:32:08.695173 [debug] [Thread-2 (]: Timing info for model.iceberg_example.sales_by_category (execute): 19:32:08.694954 => 19:32:08.694961
+[0m19:32:08.696582 [debug] [Thread-1 (]: Finished running node test.iceberg_example.unique_stg_products_product_id.7d950a1467
+[0m19:32:08.697861 [debug] [Thread-4 (]: Finished running node model.iceberg_example.sales_by_product
+[0m19:32:08.702493 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276"
+[0m19:32:08.703767 [debug] [Thread-2 (]: Finished running node model.iceberg_example.sales_by_category
+[0m19:32:08.704657 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12
+[0m19:32:08.705565 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_stg_sales_sale_date.b84165df57
+[0m19:32:08.707136 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929
+[0m19:32:08.708440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.unique_stg_products_product_id.7d950a1467, now test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12)
+[0m19:32:08.709628 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.iceberg_example.sales_by_product, now test.iceberg_example.not_null_stg_sales_sale_date.b84165df57)
+[0m19:32:08.710685 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.iceberg_example.sales_by_category, now test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929)
+[0m19:32:08.711729 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12
+[0m19:32:08.712749 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_stg_sales_sale_date.b84165df57
+[0m19:32:08.713306 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276 (compile): 19:32:08.698568 => 19:32:08.713076
+[0m19:32:08.714007 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929
+[0m19:32:08.718550 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12"
+[0m19:32:08.722886 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_sales_sale_date.b84165df57"
+[0m19:32:08.723810 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276
+[0m19:32:08.728023 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929"
+[0m19:32:08.730226 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276 (execute): 19:32:08.729969 => 19:32:08.729983
+[0m19:32:08.732155 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276
+[0m19:32:08.733358 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f
+[0m19:32:08.734001 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12 (compile): 19:32:08.714682 => 19:32:08.733740
+[0m19:32:08.734485 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929 (compile): 19:32:08.724532 => 19:32:08.734260
+[0m19:32:08.734945 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_stg_sales_sale_date.b84165df57 (compile): 19:32:08.719285 => 19:32:08.734730
+[0m19:32:08.735870 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_sales_product_id.f0a6c99276, now test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f)
+[0m19:32:08.736711 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12
+[0m19:32:08.737544 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929
+[0m19:32:08.738376 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_stg_sales_sale_date.b84165df57
+[0m19:32:08.739288 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f
+[0m19:32:08.740182 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12 (execute): 19:32:08.739964 => 19:32:08.739974
+[0m19:32:08.741042 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929 (execute): 19:32:08.740831 => 19:32:08.740840
+[0m19:32:08.742045 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_stg_sales_sale_date.b84165df57 (execute): 19:32:08.741811 => 19:32:08.741819
+[0m19:32:08.746621 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f"
+[0m19:32:08.747946 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12
+[0m19:32:08.749284 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929
+[0m19:32:08.750508 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_stg_sales_sale_date.b84165df57
+[0m19:32:08.751865 [debug] [Thread-1 (]: Began running node test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d
+[0m19:32:08.752752 [debug] [Thread-2 (]: Began running node test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521
+[0m19:32:08.753644 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_sales_by_product_category.5dd1b81659
+[0m19:32:08.754782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_sales_quantity.0198ea4c12, now test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d)
+[0m19:32:08.755897 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_sales_sale_id.6b07c53929, now test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521)
+[0m19:32:08.757004 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_sales_sale_date.b84165df57, now test.iceberg_example.not_null_sales_by_product_category.5dd1b81659)
+[0m19:32:08.757688 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f (compile): 19:32:08.742748 => 19:32:08.757416
+[0m19:32:08.758468 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d
+[0m19:32:08.759465 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521
+[0m19:32:08.760337 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_category.5dd1b81659
+[0m19:32:08.761221 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f
+[0m19:32:08.769179 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d"
+[0m19:32:08.774470 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521"
+[0m19:32:08.778846 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_category.5dd1b81659"
+[0m19:32:08.779886 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f (execute): 19:32:08.779637 => 19:32:08.779649
+[0m19:32:08.782604 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f
+[0m19:32:08.783548 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e
+[0m19:32:08.784645 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_stg_sales_total_amount.a154cd757f, now test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e)
+[0m19:32:08.785468 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e
+[0m19:32:08.790259 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e"
+[0m19:32:08.790801 [debug] [Thread-2 (]: Timing info for test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521 (compile): 19:32:08.769816 => 19:32:08.790561
+[0m19:32:08.791303 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_category.5dd1b81659 (compile): 19:32:08.775344 => 19:32:08.791084
+[0m19:32:08.791762 [debug] [Thread-1 (]: Timing info for test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d (compile): 19:32:08.761882 => 19:32:08.791548
+[0m19:32:08.792945 [debug] [Thread-2 (]: Began executing node test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521
+[0m19:32:08.793798 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_sales_by_product_category.5dd1b81659
+[0m19:32:08.794623 [debug] [Thread-1 (]: Began executing node test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d
+[0m19:32:08.795499 [debug] [Thread-2 (]: Timing info for test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521 (execute): 19:32:08.795283 => 19:32:08.795293
+[0m19:32:08.796326 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_category.5dd1b81659 (execute): 19:32:08.796115 => 19:32:08.796122
+[0m19:32:08.797224 [debug] [Thread-1 (]: Timing info for test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d (execute): 19:32:08.796984 => 19:32:08.796991
+[0m19:32:08.797903 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e (compile): 19:32:08.786358 => 19:32:08.797694
+[0m19:32:08.798900 [debug] [Thread-2 (]: Finished running node test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521
+[0m19:32:08.800129 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_sales_by_product_category.5dd1b81659
+[0m19:32:08.801294 [debug] [Thread-1 (]: Finished running node test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d
+[0m19:32:08.802072 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e
+[0m19:32:08.803019 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132
+[0m19:32:08.804069 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e
+[0m19:32:08.804998 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371
+[0m19:32:08.805933 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e (execute): 19:32:08.805693 => 19:32:08.805701
+[0m19:32:08.807002 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.unique_stg_sales_sale_id.8a4f7c9521, now test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132)
+[0m19:32:08.808014 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_category.5dd1b81659, now test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e)
+[0m19:32:08.809046 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.relationships_stg_sales_product_id__product_id__ref_stg_products_.57e6472e6d, now test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371)
+[0m19:32:08.810290 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e
+[0m19:32:08.811123 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132
+[0m19:32:08.811952 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e
+[0m19:32:08.812795 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371
+[0m19:32:08.813756 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710
+[0m19:32:08.818359 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132"
+[0m19:32:08.822760 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e"
+[0m19:32:08.826936 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371"
+[0m19:32:08.828063 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_first_sale_date.438dd7814e, now test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710)
+[0m19:32:08.830585 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710
+[0m19:32:08.834904 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710"
+[0m19:32:08.836170 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132 (compile): 19:32:08.814432 => 19:32:08.835826
+[0m19:32:08.836760 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371 (compile): 19:32:08.823474 => 19:32:08.836496
+[0m19:32:08.837234 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e (compile): 19:32:08.819135 => 19:32:08.837014
+[0m19:32:08.837953 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132
+[0m19:32:08.838813 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371
+[0m19:32:08.839678 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e
+[0m19:32:08.840586 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132 (execute): 19:32:08.840368 => 19:32:08.840378
+[0m19:32:08.841137 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710 (compile): 19:32:08.831280 => 19:32:08.840927
+[0m19:32:08.842089 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371 (execute): 19:32:08.841863 => 19:32:08.841872
+[0m19:32:08.843133 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e (execute): 19:32:08.842920 => 19:32:08.842928
+[0m19:32:08.844376 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132
+[0m19:32:08.845467 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710
+[0m19:32:08.846678 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371
+[0m19:32:08.847834 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e
+[0m19:32:08.848713 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873
+[0m19:32:08.849644 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710 (execute): 19:32:08.849426 => 19:32:08.849435
+[0m19:32:08.850506 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6
+[0m19:32:08.851408 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc
+[0m19:32:08.852431 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_last_sale_date.710c299132, now test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873)
+[0m19:32:08.853645 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710
+[0m19:32:08.854620 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_product_id.0f982d1371, now test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6)
+[0m19:32:08.855595 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_number_of_sales.cee084b06e, now test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc)
+[0m19:32:08.856411 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873
+[0m19:32:08.857277 [debug] [Thread-3 (]: Began running node test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c
+[0m19:32:08.858076 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6
+[0m19:32:08.858899 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc
+[0m19:32:08.863328 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873"
+[0m19:32:08.864444 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_product_name.bafc63c710, now test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c)
+[0m19:32:08.869655 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6"
+[0m19:32:08.873560 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc"
+[0m19:32:08.874904 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c
+[0m19:32:08.879557 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c"
+[0m19:32:08.880667 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc (compile): 19:32:08.870319 => 19:32:08.880451
+[0m19:32:08.881112 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873 (compile): 19:32:08.859608 => 19:32:08.880903
+[0m19:32:08.881550 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6 (compile): 19:32:08.865102 => 19:32:08.881347
+[0m19:32:08.882230 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc
+[0m19:32:08.883037 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873
+[0m19:32:08.883766 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6
+[0m19:32:08.884716 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc (execute): 19:32:08.884504 => 19:32:08.884513
+[0m19:32:08.885365 [debug] [Thread-3 (]: Timing info for test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c (compile): 19:32:08.876444 => 19:32:08.885162
+[0m19:32:08.885979 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873 (execute): 19:32:08.885733 => 19:32:08.885740
+[0m19:32:08.886831 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6 (execute): 19:32:08.886627 => 19:32:08.886634
+[0m19:32:08.887985 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc
+[0m19:32:08.888774 [debug] [Thread-3 (]: Began executing node test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c
+[0m19:32:08.890043 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873
+[0m19:32:08.891189 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6
+[0m19:32:08.892009 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8
+[0m19:32:08.892873 [debug] [Thread-3 (]: Timing info for test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c (execute): 19:32:08.892662 => 19:32:08.892668
+[0m19:32:08.893689 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_sales_by_category_category.99acef3343
+[0m19:32:08.894571 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad
+[0m19:32:08.895621 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_unit_price.af72cd72cc, now test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8)
+[0m19:32:08.896797 [debug] [Thread-3 (]: Finished running node test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c
+[0m19:32:08.897769 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_total_quantity_sold.965d187873, now test.iceberg_example.not_null_sales_by_category_category.99acef3343)
+[0m19:32:08.898759 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_product_total_revenue.da0e64c3e6, now test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad)
+[0m19:32:08.899667 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8
+[0m19:32:08.900581 [debug] [Thread-3 (]: Began running node test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d
+[0m19:32:08.901374 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_category.99acef3343
+[0m19:32:08.902154 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad
+[0m19:32:08.906335 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8"
+[0m19:32:08.907389 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.unique_sales_by_product_product_id.cc066b1b6c, now test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d)
+[0m19:32:08.911357 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_category.99acef3343"
+[0m19:32:08.915129 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad"
+[0m19:32:08.916386 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d
+[0m19:32:08.921163 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d"
+[0m19:32:08.922312 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8 (compile): 19:32:08.902865 => 19:32:08.922096
+[0m19:32:08.922756 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad (compile): 19:32:08.912050 => 19:32:08.922546
+[0m19:32:08.923195 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_category_category.99acef3343 (compile): 19:32:08.908031 => 19:32:08.922988
+[0m19:32:08.923887 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8
+[0m19:32:08.924708 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad
+[0m19:32:08.925519 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_sales_by_category_category.99acef3343
+[0m19:32:08.926438 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8 (execute): 19:32:08.926226 => 19:32:08.926235
+[0m19:32:08.926959 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d (compile): 19:32:08.917972 => 19:32:08.926754
+[0m19:32:08.927679 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad (execute): 19:32:08.927466 => 19:32:08.927474
+[0m19:32:08.928551 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_category_category.99acef3343 (execute): 19:32:08.928334 => 19:32:08.928341
+[0m19:32:08.929925 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8
+[0m19:32:08.930771 [debug] [Thread-3 (]: Began executing node test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d
+[0m19:32:08.931947 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad
+[0m19:32:08.933104 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_sales_by_category_category.99acef3343
+[0m19:32:08.933961 [debug] [Thread-4 (]: Began running node test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d
+[0m19:32:08.934854 [debug] [Thread-3 (]: Timing info for test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d (execute): 19:32:08.934644 => 19:32:08.934651
+[0m19:32:08.935679 [debug] [Thread-1 (]: Began running node test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87
+[0m19:32:08.936540 [debug] [Thread-2 (]: Began running node test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd
+[0m19:32:08.937566 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_category_average_unit_price.2c4e24a1b8, now test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d)
+[0m19:32:08.938811 [debug] [Thread-3 (]: Finished running node test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d
+[0m19:32:08.939811 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_category_first_sale_date.da94c8c1ad, now test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87)
+[0m19:32:08.940855 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_category_category.99acef3343, now test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd)
+[0m19:32:08.941666 [debug] [Thread-4 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d
+[0m19:32:08.942526 [debug] [Thread-3 (]: Began running node test.iceberg_example.unique_sales_by_category_category.b77939e04a
+[0m19:32:08.943342 [debug] [Thread-1 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87
+[0m19:32:08.944180 [debug] [Thread-2 (]: Began compiling node test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd
+[0m19:32:08.949779 [debug] [Thread-4 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d"
+[0m19:32:08.950634 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.iceberg_example.not_null_sales_by_category_last_sale_date.2da866280d, now test.iceberg_example.unique_sales_by_category_category.b77939e04a)
+[0m19:32:08.954390 [debug] [Thread-1 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87"
+[0m19:32:08.958334 [debug] [Thread-2 (]: Writing injected SQL for node "test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd"
+[0m19:32:08.959695 [debug] [Thread-3 (]: Began compiling node test.iceberg_example.unique_sales_by_category_category.b77939e04a
+[0m19:32:08.964324 [debug] [Thread-3 (]: Writing injected SQL for node "test.iceberg_example.unique_sales_by_category_category.b77939e04a"
+[0m19:32:08.965561 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87 (compile): 19:32:08.951283 => 19:32:08.965344
+[0m19:32:08.966033 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd (compile): 19:32:08.955086 => 19:32:08.965823
+[0m19:32:08.966497 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d (compile): 19:32:08.944861 => 19:32:08.966262
+[0m19:32:08.967158 [debug] [Thread-1 (]: Began executing node test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87
+[0m19:32:08.967971 [debug] [Thread-2 (]: Began executing node test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd
+[0m19:32:08.968844 [debug] [Thread-4 (]: Began executing node test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d
+[0m19:32:08.969431 [debug] [Thread-3 (]: Timing info for test.iceberg_example.unique_sales_by_category_category.b77939e04a (compile): 19:32:08.961277 => 19:32:08.969221
+[0m19:32:08.970139 [debug] [Thread-1 (]: Timing info for test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87 (execute): 19:32:08.969926 => 19:32:08.969934
+[0m19:32:08.971272 [debug] [Thread-2 (]: Timing info for test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd (execute): 19:32:08.970916 => 19:32:08.970926
+[0m19:32:08.972196 [debug] [Thread-4 (]: Timing info for test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d (execute): 19:32:08.971972 => 19:32:08.971979
+[0m19:32:08.972978 [debug] [Thread-3 (]: Began executing node test.iceberg_example.unique_sales_by_category_category.b77939e04a
+[0m19:32:08.974169 [debug] [Thread-1 (]: Finished running node test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87
+[0m19:32:08.975282 [debug] [Thread-2 (]: Finished running node test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd
+[0m19:32:08.976424 [debug] [Thread-4 (]: Finished running node test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d
+[0m19:32:08.977289 [debug] [Thread-3 (]: Timing info for test.iceberg_example.unique_sales_by_category_category.b77939e04a (execute): 19:32:08.977077 => 19:32:08.977084
+[0m19:32:08.979986 [debug] [Thread-3 (]: Finished running node test.iceberg_example.unique_sales_by_category_category.b77939e04a
+[0m19:32:08.981564 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:32:08.982287 [debug] [MainThread]: Connection 'test.iceberg_example.not_null_sales_by_category_total_revenue.fb1162affd' was properly closed.
+[0m19:32:08.983025 [debug] [MainThread]: Connection 'test.iceberg_example.not_null_sales_by_category_total_quantity_sold.2e90e8fe87' was properly closed.
+[0m19:32:08.983763 [debug] [MainThread]: Connection 'test.iceberg_example.not_null_sales_by_category_number_of_products.cf0e6caa7d' was properly closed.
+[0m19:32:08.984468 [debug] [MainThread]: Connection 'test.iceberg_example.unique_sales_by_category_category.b77939e04a' was properly closed.
+[0m19:32:08.988082 [debug] [MainThread]: Command end result
+[0m19:30:59.169194 [debug] [MainThread]: Acquiring new trino connection 'generate_catalog'
+[0m19:30:59.170072 [info ] [MainThread]: Building catalog
+[0m19:30:59.172061 [debug] [ThreadPool]: Acquiring new trino connection 'iceberg.information_schema'
+[0m19:30:59.197182 [debug] [ThreadPool]: Using trino connection "iceberg.information_schema"
+[0m19:30:59.198097 [debug] [ThreadPool]: On iceberg.information_schema: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "iceberg_example", "target_name": "dev", "connection_name": "iceberg.information_schema"} */
+
+    
+        with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        table_type as "table_type",
+        null as "table_owner"
+    from "iceberg".INFORMATION_SCHEMA.tables
+            where
+        table_schema != 'information_schema'
+        and
+        (
+                    (
+                        table_schema = 'default_marts'
+                        and table_name = 'sales_by_category'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_marts'
+                        and table_name = 'sales_by_product'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_staging'
+                        and table_name = 'stg_products'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_staging'
+                        and table_name = 'stg_sales'
+                    )
+                )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from "iceberg".INFORMATION_SCHEMA.columns
+            where
+        table_schema != 'information_schema'
+        and
+        (
+                    (
+                        table_schema = 'default_marts'
+                        and table_name = 'sales_by_category'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_marts'
+                        and table_name = 'sales_by_product'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_staging'
+                        and table_name = 'stg_products'
+                    )
+                 or 
+                    (
+                        table_schema = 'default_staging'
+                        and table_name = 'stg_sales'
+                    )
+                )
+        ),
+        table_comment as (
+            
+    select
+        catalog_name as "table_database",
+        schema_name as "table_schema",
+        table_name as "table_name",
+        comment as "table_comment"
+    from system.metadata.table_comments
+    where
+        catalog_name = 'iceberg'
+        and
+        schema_name != 'information_schema'
+        and
+        
+                (
+                    schema_name = 'default_marts'
+                    and table_name = 'sales_by_category'
+                )
+            
+    union all
+    
+    select
+        catalog_name as "table_database",
+        schema_name as "table_schema",
+        table_name as "table_name",
+        comment as "table_comment"
+    from system.metadata.table_comments
+    where
+        catalog_name = 'iceberg'
+        and
+        schema_name != 'information_schema'
+        and
+        
+                (
+                    schema_name = 'default_marts'
+                    and table_name = 'sales_by_product'
+                )
+            
+    union all
+    
+    select
+        catalog_name as "table_database",
+        schema_name as "table_schema",
+        table_name as "table_name",
+        comment as "table_comment"
+    from system.metadata.table_comments
+    where
+        catalog_name = 'iceberg'
+        and
+        schema_name != 'information_schema'
+        and
+        
+                (
+                    schema_name = 'default_staging'
+                    and table_name = 'stg_products'
+                )
+            
+    union all
+    
+    select
+        catalog_name as "table_database",
+        schema_name as "table_schema",
+        table_name as "table_name",
+        comment as "table_comment"
+    from system.metadata.table_comments
+    where
+        catalog_name = 'iceberg'
+        and
+        schema_name != 'information_schema'
+        and
+        
+                (
+                    schema_name = 'default_staging'
+                    and table_name = 'stg_sales'
+                )
+            
+        )
+        select
+            table_database,
+            table_schema,
+            table_name,
+            table_type,
+            table_owner,
+            column_name,
+            column_index,
+            column_type,
+            column_comment,
+            table_comment
+        from tables
+        join columns using ("table_database", "table_schema", "table_name")
+        join table_comment using ("table_database", "table_schema", "table_name")
+        order by "column_index"
+[0m19:30:59.198956 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:32:10.004212 [debug] [ThreadPool]: SQL status: SUCCESS in 71.0 seconds
+[0m19:32:10.010887 [debug] [ThreadPool]: On iceberg.information_schema: Close
+[0m19:32:10.031356 [info ] [MainThread]: Catalog written to /opt/airflow/dbt_project/target/catalog.json
+[0m19:32:10.032997 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 1.2742194, "process_user_time": 2.819633, "process_kernel_time": 0.260273, "process_mem_max_rss": "168204", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:32:10.034145 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:32:10.033975 after 1.28 seconds
+[0m19:32:10.035017 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:32:10.035832 [debug] [MainThread]: Connection 'iceberg.information_schema' was properly closed.
+[0m19:32:10.036706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e36bcfd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e345ef640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e342ac5b0>]}
+[0m19:32:10.037607 [debug] [MainThread]: Flushing usage events
