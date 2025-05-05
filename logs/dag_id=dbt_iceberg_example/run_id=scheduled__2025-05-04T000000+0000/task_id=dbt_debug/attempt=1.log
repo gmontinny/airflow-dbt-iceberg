@@ -1,0 +1,47 @@
+[2025-05-05T09:52:32.526+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-05T09:52:32.539+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_debug scheduled__2025-05-04T00:00:00+00:00 [queued]>
+[2025-05-05T09:52:32.543+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_iceberg_example.dbt_debug scheduled__2025-05-04T00:00:00+00:00 [queued]>
+[2025-05-05T09:52:32.544+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2025-05-05T09:52:32.551+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_debug> on 2025-05-04 00:00:00+00:00
+[2025-05-05T09:52:32.556+0000] {standard_task_runner.py:63} INFO - Started process 171 to run task
+[2025-05-05T09:52:32.558+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_iceberg_example', 'dbt_debug', 'scheduled__2025-05-04T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/dbt_iceberg_dag.py', '--cfg-path', '/tmp/tmpnx9xvj54']
+[2025-05-05T09:52:32.558+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask dbt_debug
+[2025-05-05T09:52:32.585+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_iceberg_example.dbt_debug scheduled__2025-05-04T00:00:00+00:00 [running]> on host 92b88004addd
+[2025-05-05T09:52:32.629+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_iceberg_example' AIRFLOW_CTX_TASK_ID='dbt_debug' AIRFLOW_CTX_EXECUTION_DATE='2025-05-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-05-04T00:00:00+00:00'
+[2025-05-05T09:52:32.630+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-05T09:52:32.638+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-05T09:52:32.639+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt_project && dbt debug --profiles-dir .']
+[2025-05-05T09:52:32.647+0000] {subprocess.py:86} INFO - Output:
+[2025-05-05T09:52:34.307+0000] {subprocess.py:93} INFO - [0m09:52:34  Running with dbt=1.7.0
+[2025-05-05T09:52:34.309+0000] {subprocess.py:93} INFO - [0m09:52:34  dbt version: 1.7.0
+[2025-05-05T09:52:34.310+0000] {subprocess.py:93} INFO - [0m09:52:34  python version: 3.11.9
+[2025-05-05T09:52:34.310+0000] {subprocess.py:93} INFO - [0m09:52:34  python path: /home/***/.local/bin/python
+[2025-05-05T09:52:34.311+0000] {subprocess.py:93} INFO - [0m09:52:34  os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-05-05T09:52:34.389+0000] {subprocess.py:93} INFO - [0m09:52:34  Using profiles dir at .
+[2025-05-05T09:52:34.390+0000] {subprocess.py:93} INFO - [0m09:52:34  Using profiles.yml file at ./profiles.yml
+[2025-05-05T09:52:34.391+0000] {subprocess.py:93} INFO - [0m09:52:34  Using dbt_project.yml file at /opt/***/dbt_project/dbt_project.yml
+[2025-05-05T09:52:34.391+0000] {subprocess.py:93} INFO - [0m09:52:34  adapter type: trino
+[2025-05-05T09:52:34.392+0000] {subprocess.py:93} INFO - [0m09:52:34  adapter version: 1.7.0
+[2025-05-05T09:52:34.442+0000] {subprocess.py:93} INFO - [0m09:52:34  Configuration:
+[2025-05-05T09:52:34.443+0000] {subprocess.py:93} INFO - [0m09:52:34    profiles.yml file [[32mOK found and valid[0m]
+[2025-05-05T09:52:34.444+0000] {subprocess.py:93} INFO - [0m09:52:34    dbt_project.yml file [[32mOK found and valid[0m]
+[2025-05-05T09:52:34.444+0000] {subprocess.py:93} INFO - [0m09:52:34  Required dependencies:
+[2025-05-05T09:52:34.449+0000] {subprocess.py:93} INFO - [0m09:52:34   - git [[32mOK found[0m]
+[2025-05-05T09:52:34.449+0000] {subprocess.py:93} INFO - 
+[2025-05-05T09:52:34.450+0000] {subprocess.py:93} INFO - [0m09:52:34  Connection:
+[2025-05-05T09:52:34.450+0000] {subprocess.py:93} INFO - [0m09:52:34    host: trino
+[2025-05-05T09:52:34.451+0000] {subprocess.py:93} INFO - [0m09:52:34    port: 8080
+[2025-05-05T09:52:34.452+0000] {subprocess.py:93} INFO - [0m09:52:34    user: ***
+[2025-05-05T09:52:34.452+0000] {subprocess.py:93} INFO - [0m09:52:34    database: iceberg
+[2025-05-05T09:52:34.453+0000] {subprocess.py:93} INFO - [0m09:52:34    schema: default
+[2025-05-05T09:52:34.454+0000] {subprocess.py:93} INFO - [0m09:52:34    cert: None
+[2025-05-05T09:52:34.454+0000] {subprocess.py:93} INFO - [0m09:52:34    prepared_statements_enabled: True
+[2025-05-05T09:52:34.455+0000] {subprocess.py:93} INFO - [0m09:52:34  Registered adapter: trino=1.7.0
+[2025-05-05T09:52:34.481+0000] {subprocess.py:93} INFO - [0m09:52:34    Connection test: [[32mOK connection ok[0m]
+[2025-05-05T09:52:34.481+0000] {subprocess.py:93} INFO - 
+[2025-05-05T09:52:34.481+0000] {subprocess.py:93} INFO - [0m09:52:34  [32mAll checks passed![0m
+[2025-05-05T09:52:35.426+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-05T09:52:35.427+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-05T09:52:35.441+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_iceberg_example, task_id=dbt_debug, run_id=scheduled__2025-05-04T00:00:00+00:00, execution_date=20250504T000000, start_date=20250505T095232, end_date=20250505T095235
+[2025-05-05T09:52:35.454+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-05T09:52:35.455+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

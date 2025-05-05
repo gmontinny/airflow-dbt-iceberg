@@ -1,15 +1,29 @@
-FROM apache/airflow:2.9.1-python3.10
+FROM apache/airflow:2.9.1-python3.11
 
 USER root
 # Instalar pacotes básicos necessários para construção de bibliotecas e compilações
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
    git \
    build-essential \
    libssl-dev \
    libffi-dev \
    python3-dev \
    curl \
-   openjdk-11-jre-headless
+   wget \
+   gnupg \
+   gpg \
+   software-properties-common \
+   && apt-get clean \
+   && rm -rf /var/lib/apt/lists/*
+
+# Instalar Java 11 usando o repositório Adoptium (anteriormente AdoptOpenJDK)
+RUN mkdir -p /etc/apt/keyrings && \
+    wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor -o /etc/apt/keyrings/adoptium.gpg && \
+    echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends temurin-11-jre && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copiar os requirements
 COPY requirements.txt /requirements.txt
